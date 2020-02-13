@@ -1,0 +1,93 @@
+<ion-header style="background-color: green;">
+  <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name="menu" style="color:#fff;"></ion-icon>
+    </button>
+    <ion-title style="color:#fff; ">My Cart</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="emptycart()" *ngIf="showcartdata">
+        <ion-icon name="md-trash" style="color:#fff;"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content no-padding class="background">
+  <div *ngIf="showtxt">
+    <ion-grid>
+      <ion-row class="emptycart">
+        <ion-col
+          ><img src="././assets/imgs/empty.png" />
+          <p>Cart Empty</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div *ngIf="showcartdata">
+    <div class="grids">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6> Sub Total </ion-col>
+          <ion-col col-6>
+            <span style="float:right">{{ amount | currency}}</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-6> Delivery Charges </ion-col>
+          <ion-col col-6 class="DeliveryCharges">
+            <span style="float:right">{{ shipping | currency}}</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-6> Total </ion-col>
+          <ion-col col-6 class="grandtotal">
+            <span style="float:right">{{ finalamount | currency}}</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <hr />
+    <div class="cartitems">
+      <p>Cart Items</p>
+      <ion-grid>
+        <ion-row *ngFor="let c of finalcartdata; let itemno = index">
+          <ion-col><img src="{{baseUrlImage}}{{c.itemImage}}"></ion-col>
+          <ion-col class="noborder"> 
+            <ion-row>
+              <ion-col>{{ c.itemname }} </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col> {{ c.itemquantity }} {{ c.itemquantitytype }}</ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>Qty : {{c.Mquantity}}</ion-col>
+              </ion-row>
+          </ion-col>
+          <ion-col>
+            <ion-row style="border:none">
+            <ion-col>
+              {{ c.itemprice * c.Mquantity | currency}}    
+            </ion-col>
+          </ion-row>
+          <ion-row style="border:none" class="updwnbtn">
+              <button ion-button color="danger" outline (click)="changeQty(itemno,-1)"><b>-</b></button>
+              <button ion-button color="danger" outline (click)="changeQty(itemno, 1)" ><b>+</b></button> 
+          </ion-row>
+        </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer class="footer" (click)="goToCheckout()" *ngIf="showcartdata">
+  <ion-toolbar color="warning">
+    <h6 style="margin-top:1rem;">
+      Confirm Order
+      <span style="float:right">{{ finalamount | currency}} &nbsp;&nbsp;<ion-icon
+          name="md-arrow-forward"
+        ></ion-icon>
+      </span>
+    </h6>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,61 @@
+<ion-menu [content]="content">
+  <ion-content class="menubar">
+    <div class="menu-header">
+      <img src="././assets/imgs/emil.png" alt="" srcset="">
+      <p>Emiltus</p>
+    </div>
+    <ion-list class="mainmenu">
+      <ion-item no-lines class="menuitem">
+        <button ion-button clear (click)="onclickHome()" menuToggle>
+          <ion-icon name="md-home"></ion-icon>
+          &nbsp;&nbsp;<p>Home</p>
+        </button>
+      </ion-item>
+
+      <ion-item no-lines class="menuitem">
+        <button ion-button clear (click)="onclickMyOrder()" menuToggle>
+          <ion-icon name="ios-cart"></ion-icon>
+          &nbsp;&nbsp;<p>My Orders</p>
+        </button>
+      </ion-item>
+
+      <ion-item no-lines class="menuitem">
+        <button ion-button clear (click)="openoffers()" menuToggle>
+          <ion-icon name="md-happy"></ion-icon>
+          &nbsp;&nbsp;<p>Offers</p>
+        </button>
+      </ion-item>
+
+      <ion-item no-lines class="menuitem">
+        <button ion-button clear (click)="onclickNoti()" menuToggle>
+          <ion-icon name="ios-notifications"></ion-icon>
+          &nbsp;&nbsp;<p>Notifications</p>
+        </button>
+      </ion-item>
+
+      <ion-item no-lines class="menuitem">
+        <button ion-button clear (click)="openContact()" menuToggle>
+          <ion-icon name="ios-pin"></ion-icon>
+          &nbsp;&nbsp;<p>Contact Us</p>
+        </button>
+      </ion-item>
+
+      <ion-item no-lines class="menuitem">
+        <button ion-button clear (click)="openfeedback()" menuToggle>
+          <ion-icon name="md-star-half"></ion-icon>
+          &nbsp;&nbsp;<p>Feedback</p>
+        </button>
+      </ion-item>
+
+      <ion-item no-lines class="menuitem">
+        <button ion-button clear (click)="logout()" menuToggle>
+          <ion-icon name="md-log-out"></ion-icon>
+          &nbsp;&nbsp;<p>Logout</p>
+        </button>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

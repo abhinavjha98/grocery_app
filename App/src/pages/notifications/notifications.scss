@@ -1,0 +1,39 @@
+page-notifications {
+
+    font-family:  roboto;
+
+    .welcome-background{
+        background-image: url('../assets/imgs/bg.png');
+        background-color:white;
+        background-size : cover;
+    }
+
+    .noti{
+        margin:8px;
+        padding: 5px;
+        background: #ffffff;
+        border-radius: 8%;
+    }
+
+    .noti ion-icon{
+        font-size: 2.5rem;
+        float: left;
+        padding:1rem;
+        color:#3e8d2e;
+    }
+
+    .noti h2{
+        margin:0;
+        padding:0;
+        padding:1rem;
+        font-size: 2rem;
+        color:#3e8d2e;
+    }
+
+    .noti p{
+        margin:0;
+        padding:1rem;
+        font-size: 1.5rem;
+        font-weight: 350;
+    }
+}

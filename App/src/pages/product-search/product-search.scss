@@ -1,0 +1,113 @@
+page-product-search {
+  .welcome-background {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-size: cover;
+    background-position: cover;
+    position: absolute;
+  }
+
+  font-family: roboto;
+
+  .cartbadge ion-badge{
+    padding:2px 5px;
+    background: #f1060e;
+  }
+
+  .searchcl ion-icon {
+    color: #3e8d2e;
+    font-weight: bolder;
+  }
+
+  .searchcl .item-button {
+    padding: 0;
+    font-size: 1.8rem;
+  }
+
+  .list{
+    margin:1rem;
+    border:1px solid #efefef;
+  }
+
+  toolbar-title {
+    color: #ffffff;
+  }
+
+  .bar-button {
+    color: #ffffff;
+  }
+
+  .itemimg {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid #3e8d2e;
+    margin: 0px 10px;
+  }
+
+  .cateproduct {
+    width: 95%;
+    padding: 0;
+    margin: 0;
+    column-count: 2;
+    column-fill: auto;
+    font-family: roboto;
+    text-align: center;
+  }
+
+  .cateproduct .card {
+    width: 100%;
+    margin: 10px 10px 0px 10px;
+    padding: 20px;
+    display: inline-block;
+  }
+
+  .cateproduct .card-header {
+    padding: 2px;
+  }
+
+  .cateproduct .card-content {
+    padding: 0;
+  }
+
+  .cateproduct .p-2 {
+    height: 15rem;
+    width: 30rem;
+    padding: 1.5rem 0.8rem;
+    object-fit: scale-down;
+  }
+
+  .cateproduct .text-center {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.6rem;
+  }
+
+  .cateproduct .quantity {
+    float: left;
+    color: #444444;
+    font-weight: bolder;
+  }
+  .cateproduct .price {
+    float: right;
+    color: #fd4449;
+    font-weight: bolder;
+  }
+
+  .cateproduct .btn-cart {
+    text-align: center;
+  }
+
+  .cateproduct .button {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    padding: 1.5rem;
+    background: #3e8d2e;
+    color:#ffffff;
+    font-weight: bold;
+  }
+
+
+}

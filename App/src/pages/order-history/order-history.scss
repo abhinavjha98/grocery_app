@@ -1,0 +1,72 @@
+page-order-history {
+
+    font-family: roboto;
+
+    .toolbar-title {
+        color: #ffffff;
+      }
+    
+      .back-button {
+        color: #ffffff;
+      }
+
+    .welcome-background{
+
+        width:100%;
+        height:100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        background-size: cover;
+        background-position: cover;
+        position:absolute; 
+
+    }
+
+
+    .orderid{
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+
+    }
+
+    .ordertime{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .orderholder{
+        padding:10px;
+    }
+
+    .orderholder p{
+        text-align: center;
+        font-size:2.5rem;
+    }
+
+    .orderholder img{
+        width:6rem;
+        margin:1.5rem auto;
+    }
+
+
+    .emptycart{
+        width:60%;
+        font-size: 2rem;
+        font-family: roboto;
+        text-align: center;
+        margin:8rem auto;
+      }
+      
+      .emptycart p{
+        font-family: LeckerliOne;
+        font-size: 2.5rem;
+        color: #3e8d2e;
+      }
+      
+      .grid{
+        padding: 10px;
+        font-size: 1.5rem;
+      }
+}

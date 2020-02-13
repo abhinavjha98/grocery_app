@@ -1,0 +1,36 @@
+<ion-header style="background-color: green;">
+  <ion-navbar no-border-bottom>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Offers</ion-title>
+  
+      <ion-buttons end class="cartbadge">
+          <button ion-button (click)="gotocart()">
+              <ion-icon name="ios-cart"></ion-icon>
+            </button><ion-badge item-end>{{cartCounterManager()}}</ion-badge>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+    
+    
+  <ion-content no-padding style="background-image: url(././assets/imgs/bg.png);background-color:white;" class="welcome-background" >
+    
+    <div class="offersproduct">
+      <ion-card *ngFor="let item of offersFullData;  let i = index;">
+        <h3 class="text-offer">New</h3>
+          <img (click)="openProductDetailPage(item.id,item.name,item.image,item.description,item.quantity,item.quantitytype,item.price)" class="p-2" src="{{baseUrlImage}}{{item.image}}">
+        <ion-card-header>
+          <h2 class="text-center">{{item.name}}</h2>
+        </ion-card-header>
+        <ion-card-content>
+            <div class="quantity">{{item.quantity}} {{item.quantitytype}}</div> <div class="price">{{item.price | currency}}</div>
+            <div class="btn-cart"><button ion-button round (click)="addToCartProd(item.id,item.name,item.quantity,item.quantitytype,item.price, item.image)"><ion-icon name="md-add-circle"></ion-icon>&nbsp;Add to Cart</button>
+            </div>
+        </ion-card-content>
+      </ion-card>
+  </div>
+  
+    </ion-content>
+  
+  

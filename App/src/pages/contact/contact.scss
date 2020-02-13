@@ -1,0 +1,40 @@
+page-contact {
+
+    font-family: roboto;
+
+    .toolbar-title {
+        color: #ffffff;
+      }
+    
+      .back-button {
+        color: #ffffff;
+      }
+
+    .bg-img{
+        
+        background-image: url('../assets/imgs/bg.png') !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: center;
+    }
+
+    .contactbtn{
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .contactbtn .button{
+        width:50%;
+        font-size: 1.5rem;
+        margin-top: 10px;
+        padding: 1.5rem;
+        background: #3e8d2e;
+        color:#ffffff;
+        font-weight: bold;
+}
+
+}
+
+

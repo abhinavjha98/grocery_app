@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "LeckerliOne";
+  font-style: semi-bold;
+  font-weight: 600;
+  src: url("../assets/fonts/LeckerliOne-Regular.ttf");
+}
+
+.bar-buttons{
+  color:#ffffff;
+}
+
+.toolbar-background {
+  border-color: #3e8d2e;
+  background: #3e8d2e;
+}
+
+.menubar{
+    background: #3e8d2e;
+}
+
+.mainmenu{
+  margin-top: 8rem;
+}
+
+.menu-header {
+  background: #3e8d2e;
+  text-align: center;
+}
+
+.menu-header img {
+  width:8rem;
+  margin-top: 6rem;
+}
+
+.menu-header p {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: LeckerliOne;
+}
+
+.toolbar-title {
+  color: white;
+}
+
+.label{
+  margin:0;
+}
+
+.menuitem{
+  background: #3e8d2e;
+}
+
+.menuitem .item-button{
+  font-family: roboto;
+  color: #ffffff;
+  margin-left: 1rem;
+  font-size: 1.8rem;
+}
+
+.menuitem p{
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 1.8rem; 
+}

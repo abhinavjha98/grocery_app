@@ -1,0 +1,21 @@
+<ion-header style="background-color: green;">
+
+  <ion-navbar>
+    <ion-title style="color:#fff;">Feedback</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <form [formGroup]="todo" (ngSubmit)="logForm()">
+        <ion-item>
+            <ion-label floating color="primary">Your Feedback</ion-label>
+              <ion-textarea rows="10" formControlName="fmsg"></ion-textarea>
+        </ion-item>
+        <div class="feedbackbtn">
+        <button ion-button round type="submit" [disabled]="!todo.valid">Submit</button>
+      </div>
+      </form>
+</ion-content>
+

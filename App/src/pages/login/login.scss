@@ -1,0 +1,57 @@
+page-login {
+
+    *{
+        font-family: Roboto;
+    }
+
+    .ion-content{
+        background-size: cover;
+        background-position: cover;
+        position: absolute;
+    }
+
+    .login{
+        width: 100%;
+        margin-top:15rem;
+        text-align: center;
+    }
+
+    .login img{
+        margin:0 auto;
+        width:10rem;
+    }
+
+    .login h3{
+        color: #3e8d2e;
+        font-family: LeckerliOne;
+        font-size: 3.5rem;
+    }
+
+    .logininput{
+        margin-top:5rem;
+    }
+
+    .login .item{
+        width:80%;
+        margin:2rem auto 2rem auto;
+    }
+
+    .label-ios + ion-input .text-input, .label-ios + ion-textarea .text-input, .label-ios + .input + .cloned-input{
+        margin-left:0;
+    }
+
+    .btn-login .button{
+        padding:0 6rem;
+    }
+
+    .login h6{
+        font-size: 1.5rem;
+        color:#454545;
+    }
+
+    .login h6 span{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+}

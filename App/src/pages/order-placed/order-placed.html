@@ -1,0 +1,78 @@
+
+<ion-header style="background-color: green;">
+    <ion-navbar>
+      <button ion-button menuToggle icon-only>
+        <ion-icon name="menu" style="color:#fff; "></ion-icon>
+      </button>
+      <ion-title style="color:#fff; ">Order Details</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding style="background-image: url(././assets/imgs/bg.png);background-color:white;" class="welcome-background" >
+  
+      <div>
+          <ion-item no-padding clear>
+            <ion-row >
+                <ion-col >
+                    <div style="font-weight: bold">Order Detail</div>
+                  </ion-col>
+              <ion-col>
+                <p>ORDER ID: {{viewData.orderid}}</p>
+                <p>Placed on </p>
+                <p>{{viewData.ordertime}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-item>  
+  
+          <ion-item no-padding clear>
+              <ion-row >
+                <ion-col >
+                  <div style="font-weight: bold">PAYMENT MODE</div>
+                </ion-col>
+                <ion-col>
+                  <p>COD</p>
+                </ion-col>
+              </ion-row>
+          </ion-item>
+  
+          <ion-item no-padding clear>
+              <ion-row >
+                <ion-col >
+                  <div style="font-weight: bold">SHIPPING  ADDRESS</div>
+                </ion-col>
+                <ion-col >
+                    <p >{{viewData.area}}</p>
+                    <p >{{viewData.address}}</p>
+                  </ion-col>
+              </ion-row>
+          </ion-item>
+  
+          <ion-item no-padding clear  no-lines>
+              <ion-row >
+                <ion-col>
+                  <div style="font-weight: bold">Contact</div>
+                </ion-col>
+                <ion-col >
+                    <p>{{viewData.mobile}}</p>
+                  </ion-col>
+                </ion-row>
+          </ion-item>
+          <div class="cartitems">
+              <p>Cart Items</p>
+              <ion-grid>
+                <ion-row>
+                  <ion-col>Item</ion-col>
+                  <ion-col>Type</ion-col>
+                  <ion-col>Overall Qty</ion-col>
+                  <ion-col>Price</ion-col>
+                </ion-row>
+                <ion-row *ngFor="let c of orderDetail; let i = index">
+                  <ion-col> {{ c.itemname }} </ion-col>
+                  <ion-col> {{ c.itemquantity }} {{ c.itemquantitytype }} </ion-col>
+                  <ion-col> {{ c.Mquantity }}</ion-col>
+                  <ion-col> {{ c.itemprice * c.Mquantity | currency}} </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+        </div>
+  </ion-content>

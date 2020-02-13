@@ -1,0 +1,40 @@
+page-order-placed {
+
+    font-family: roboto;
+
+    .toolbar-title {
+        color: #ffffff;
+      }
+    
+      .back-button {
+        color: #ffffff;
+      }
+
+    .welcome-background{
+        width:100%;
+        height:100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        background-size: cover;
+        background-position: cover;
+        position:absolute; 
+    }
+
+    .cartitems{
+        margin-top: 8px;
+        padding: 10px;
+        text-align: center;
+        background: #ffffff;
+      }
+      
+      .cartitems p{
+        font-family: LeckerliOne;
+        font-size: 2rem;
+      }
+      
+      .cartitems ion-row{
+        border-bottom: 1px solid #d3d3d3;
+      }
+    
+}

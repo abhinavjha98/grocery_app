@@ -1,0 +1,49 @@
+page-order-confirm {
+
+    font-family: roboto;
+
+    .welcome-background{
+        width:100%;
+        height:100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        background-size: cover;
+        background-position: cover;
+        position:absolute; 
+    }
+
+    .textthanks{
+        text-align:center;
+    }
+
+    .textorderplaced{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .textorderno{
+        text-align:center;
+        font-size: 2rem;
+        color: #008000;
+    }
+
+    .textaddional{
+        text-align: center;
+        width:70%;
+        margin:auto;
+    }
+
+    .img-holder{
+        text-align: center;
+    }
+
+    .confirmimg{
+        margin-top:8rem;
+        width:12rem;
+    }
+
+    .orderno{
+        font-weight: bolder;
+    }
+}

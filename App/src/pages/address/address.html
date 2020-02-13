@@ -1,0 +1,36 @@
+<!--
+  Generated template for the DeliveryAddressPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header style="background-color: green;">
+  <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name="menu" style="color:#fff; "></ion-icon>
+    </button>
+    <ion-title style="color:#fff; ">Delivery Address</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding class="formdiv">
+    <ion-item>
+      <ion-label stacked color="primary">Name</ion-label>
+      <ion-input type="text" required [(ngModel)]="userData.fname"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked color="primary">Address</ion-label>
+      <ion-textarea rows="5" required [(ngModel)]="userData.address"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked color="primary">Mobile Number</ion-label>
+      <ion-input type="number" required [(ngModel)]="userData.mobile"></ion-input>
+    </ion-item>
+    <div class="subbtn">
+      <button ion-button round (click)="onSubmit()">
+        Submit
+      </button>
+    </div>
+</ion-content>

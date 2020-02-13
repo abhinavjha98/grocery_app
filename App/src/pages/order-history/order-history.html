@@ -1,0 +1,46 @@
+<ion-header style="background-color: green;">
+    <ion-navbar>
+      <button ion-button menuToggle icon-only>
+        <ion-icon name="menu" style="color:#fff; "></ion-icon>
+      </button>
+      <ion-title style="color:#fff; ">My Orders</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+  <ion-content no-padding style="background-image: url(././assets/imgs/bg.png);background-color:white;" class="welcome-background" >
+
+    <div *ngIf="showtxt">
+        <ion-grid>     
+          <ion-row class="emptycart">
+            <ion-col>
+              <p>There are no Products in your Orderlist!</p></ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    
+      <ion-list *ngIf="showHisdata">
+        <ion-card no-padding *ngFor="let item of orderdata;  let i = index;">
+          <ion-row class="orderholder">
+            <ion-col>
+              <h2 class="orderid">ORDER ID: {{item.orderid}}</h2>
+              <h3 class="ordertime">Placed on <span>{{item.ordertime}}</span></h3>
+              <p *ngIf="item.status == 'Received'"><img src="././assets/imgs/received.png">Received</p>
+              <p *ngIf="item.status == 'Confirmed'"><img src="././assets/imgs/confirm.png">Confirmed</p>
+              <p *ngIf="item.status == 'Preparing'"><img src="././assets/imgs/process.png">Processed</p>
+              <p *ngIf="item.status == 'On Way'"><img src="././assets/imgs/deliver.png">On Way</p>
+              <p *ngIf="item.status == 'Delivered'"><img src="././assets/imgs/delivered.png">Delivered</p>
+              <p *ngIf="item.status == 'Cancelled'"><img src="././assets/imgs/cancel.png">Cancelled</p>
+            </ion-col>
+          </ion-row>
+          <ion-row >
+            <ion-col>
+              <button ion-button icon-left clear (click)="openOrderDetailPage(item.orderid,item.fname,item.lname,item.area,item.address,item.mobile,item.ordertime)">
+                <div>View Detail</div>
+              </button>
+            </ion-col>
+          </ion-row>
+        </ion-card>   
+      </ion-list>
+
+</ion-content>

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle icon-only>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Order Confirmation</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding style="background-image: url(././assets/imgs/bg.png);background-color:white;" class="welcome-background">
+  <div class="img-holder"><img class="confirmimg" src="././assets/imgs/order-submitted.png" /></div>
+  <h2 class="textthanks">Thank You</h2>
+<p class="textorderplaced">Your Order has been Placed !!</p>
+
+<div>
+</div>
+<p class="textorderno">Your Order Number: <span class="orderno">{{orderid}}</span></p>
+<p class="textaddional">All the details of the Shipping of the order, status & delivery shall be sent to you via an sms</p>
+</ion-content>

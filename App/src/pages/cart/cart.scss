@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'LeckerliOne';
+  font-style: semi-bold;
+  font-weight: 600;
+  src: url('../assets/fonts/LeckerliOne-Regular.ttf');
+  }
+
+.col {
+  font-family: roboto;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #3e8d2e;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+}
+
+.emptycart{
+  width:60%;
+  font-size: 2rem;
+  font-family: roboto;
+  text-align: center;
+  margin:8rem auto;
+}
+
+.emptycart img{
+  width:12rem;
+}
+
+.emptycart p{
+  font-family: LeckerliOne;
+  font-size: 2.5rem;
+  color: #3e8d2e;
+}
+
+.grid{
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.DeliveryCharges{
+  color: #f53d3d;
+}
+
+.grandtotal{
+  color: #3e8d2e;
+}
+
+.cartitems{
+  margin-top: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cartitems img{
+  width: 6rem;
+}
+
+.cartitems p{
+  font-family: LeckerliOne;
+  font-size: 2rem;
+}
+
+.cartitems ion-row{
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.noborder ion-row{
+  border-bottom: 0px;
+}
+
+.updwnbtn button{
+  border-radius: 10%;
+}

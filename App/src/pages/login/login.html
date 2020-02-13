@@ -1,0 +1,18 @@
+<ion-content no-padding style="background-image: url(././assets/imgs/bg.png);background-color:white;">
+<div class="login">
+  <img src="././assets/imgs/emil.png" alt="">
+  <h3>Emiltus</h3>
+  <div class="logininput">
+  <ion-item>
+    <ion-label fixed color="primary"> Email</ion-label>
+  <ion-input type="text" [(ngModel)]="userData.email"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label fixed color="primary"> Password</ion-label>
+<ion-input type="password" [(ngModel)]="userData.password"></ion-input>
+</ion-item>
+</div>
+<div class="btn-login"><button ion-button round (click)="login()">&nbsp;Login</button></div>
+<h6>Don't have an account? <span><a href="#" (click)="onregister()">Register Now</a></span></h6>
+</div>
+</ion-content>

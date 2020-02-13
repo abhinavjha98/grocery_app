@@ -1,0 +1,36 @@
+<ion-content no-padding style="background-image: url(././assets/imgs/bg.png);background-color:white;">
+  <div class="register">
+   <img src="././assets/imgs/emil.png" alt="">
+  <h3>Emiltus</h3>
+    <div class="registerinput">
+
+        <ion-item>
+            <ion-label fixed color="primary"> Name</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label fixed color="primary"> Mobile</ion-label>
+          <ion-input type="number"  [(ngModel)]="userData.mobile"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label fixed color="primary"> Address</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.address"></ion-input>
+        </ion-item>
+
+    <ion-item>
+      <ion-label fixed color="primary"> Email</ion-label>
+    <ion-input type="email"  [(ngModel)]="userData.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed color="primary"> Password</ion-label>
+  <ion-input type="password"  [(ngModel)]="userData.password"></ion-input>
+  </ion-item>
+
+  </div>
+  <div class="btn-register"><button ion-button round (click)="register()">&nbsp;Register</button></div>
+  <h6>Already have an Account? <span><a href="#" (click)="onlogin()">Login</a></span></h6>
+  </div>
+  </ion-content>

@@ -1,0 +1,39 @@
+<ion-header style="background-color: green;">
+    <ion-navbar>
+      <button ion-button menuToggle icon-only>
+        <ion-icon name="menu" style="color:#fff; "></ion-icon>
+      </button>
+      <ion-title style="color:#fff; ">Search</ion-title>
+      <ion-buttons end class="cartbadge">
+          <button ion-button (click)="openCartPage()">
+              <ion-icon name="ios-cart"></ion-icon>
+            </button><ion-badge item-end>{{cartCounterManager()}}</ion-badge>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding style="background-image: url(././assets/imgs/bg.png);background-color:white;" class="welcome-background" >
+    <ion-list class="listcls" no-lines>
+        <ion-item class="searchcl">
+          <ion-input type="text" [(ngModel)]="postData.squery" placeholder="Search"></ion-input>
+          <button item-right ion-button clear (click)="searchProduct()">
+              <ion-icon name="md-search"></ion-icon>
+          </button>
+        </ion-item>
+      </ion-list>
+
+      <div class="cateproduct">
+          <ion-card *ngFor="let item of searchFullData;  let i = index;">
+              <img (click)="openProductDetailPage(item.id,item.name,item.image,item.description,item.quantity,item.quantitytype,item.price)" class="p-2" src="{{baseUrlImage}}{{item.image}}">
+            <ion-card-header>
+              <h2 class="text-center">{{item.name}}</h2>
+            </ion-card-header>
+            <ion-card-content>
+                <div class="quantity">{{item.quantity}} {{item.quantitytype}}</div> <div class="price">{{item.price | currency}}</div>
+                <div class="btn-cart"><button ion-button round (click)="addToCartProd(item.id,item.name,item.quantity,item.quantitytype,item.price, item.image)"><ion-icon name="md-add-circle"></ion-icon>&nbsp;Add to Cart</button>
+                </div>
+            </ion-card-content>
+          </ion-card>
+      </div>
+
+</ion-content>

@@ -1,0 +1,43 @@
+<ion-header style="background-color: green;">
+    <ion-navbar>
+      <button ion-button menuToggle icon-only>
+        <ion-icon name="menu" style="color:#fff; "></ion-icon>
+      </button>
+      <ion-title style="color:#fff; ">Product Description</ion-title>
+      <ion-buttons end class="cartbadge">
+          <button ion-button (click)="openCartPage()">
+              <ion-icon name="ios-cart"></ion-icon>
+            </button><ion-badge item-end>{{cartCounterManager()}}</ion-badge>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+<ion-content style="background-image: url(././assets/imgs/bg.png);background-color:white;"> 
+  <div class="productdesc">    
+    <ion-grid>
+          <img class="productimage" src="{{baseUrlImage}}{{itemImage}}">
+          <ion-row>
+              <ion-col>
+                  <h1>{{itemName}}</h1>
+              </ion-col>
+            <ion-col>
+                <p class="price">{{itemPrice | currency}}/ {{itemQuantity}} {{itemQuantityType}}</p>
+            </ion-col>
+          </ion-row>
+      <ion-row>
+        <p>
+            {{itemDesc}}
+        </p>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col class="btn-cart">
+            <button ion-button round primary (click)="addtocart(itemId,itemName,itemQuantity,itemQuantityType,itemPrice,itemImage)">
+              <ion-icon name="md-add-circle"></ion-icon>
+               &nbsp;&nbsp;Add To Cart
+            </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  </ion-content>

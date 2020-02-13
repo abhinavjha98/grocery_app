@@ -1,0 +1,56 @@
+page-register {
+    *{
+        font-family: Roboto;
+    }
+
+    .ion-content{
+        background-size: cover;
+        background-position: cover;
+        position: absolute;
+    }
+
+    .register{
+        width: 100%;
+        margin-top:8rem;
+        text-align: center;
+    }
+
+    .register img{
+        margin:0 auto;
+        width:8rem;
+    }
+
+    .register h3{
+        color: #3e8d2e;
+        font-family: LeckerliOne;
+        font-size: 3.0rem;
+    }
+
+    .registerinput{
+        margin-top:5rem;
+    }
+
+    .register .item{
+        width:80%;
+        margin:2rem auto 2rem auto;
+    }
+
+    .label-ios + ion-input .text-input, .label-ios + ion-textarea .text-input, .label-ios + .input + .cloned-input{
+        margin-left:0;
+    }
+
+    .btn-register .button{
+        padding:0 6rem;
+    }
+
+    .register h6{
+        font-size: 1.5rem;
+        color:#454545;
+    }
+
+    .register h6 span{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+}

@@ -1,0 +1,166 @@
+page-home {
+  font-family: roboto;
+  
+  @font-face {
+    font-family: 'LeckerliOne';
+    font-style: semi-bold;
+    font-weight: 600;
+    src: url('../assets/fonts/LeckerliOne-Regular.ttf');
+    }
+
+  .toolbar-title {
+    color: #ffffff;
+    font-family: LeckerliOne;
+  }
+
+  .bar-button {
+    color: #ffffff;
+  }
+
+  .welcome-background {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-size: cover;
+    background-position: cover;
+    position: absolute;
+  }
+
+  .discount {
+    font-size: 12px;
+    text-decoration: line-through;
+  }
+
+  .slides1 {
+    height: 30%;
+    position: relative;
+  }
+
+  .prd{
+    margin-left:5px;
+    float: left;
+  }
+
+  .offers button{
+    float: right;
+    margin-top:1.5rem;
+    margin-right:8px;
+    text-align:right;
+    color:#ffffff;
+    padding: 3px 10px;
+    font-size: 1.5rem;
+    background: #fd4449;
+    border-radius: 5%;
+    border:none;
+    height: auto;
+    text-transform: none;
+  }
+
+  .offers{
+    -webkit-animation: pulse linear 1s infinite;
+    animation: pulse linear 1s infinite;
+  }
+  @-webkit-keyframes pulse {
+    0% { opacity: 1; } 
+    50% { opacity: .1; } 
+    100% { opacity: 1; }
+  }
+  @keyframes pulse {
+    0% { opacity: 1; } 
+    50% { opacity: .1; } 
+    100% { opacity: 1; }
+  }
+
+  /////////////////////////////////////
+
+  ion-scroll[scrollX] {
+    white-space: nowrap;
+    .scroll-item {
+      display: inline-block;
+    }
+    .scroll-item p {
+      padding: 8px 0px 0px 0px;
+      margin: 0;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  .itemimg {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid #3e8d2e;
+    margin: 0px 10px;
+  }
+
+  .cartbadge ion-badge{
+    padding:2px 5px;
+    background: #f1060e;
+  }
+
+  ////////////////////////////////////////////////////////
+
+  .homeproducts {
+    width: 95%;
+    padding: 0;
+    margin: 0;
+    column-count: 2;
+    column-fill: auto;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 10px 0px 10px;
+    padding: 20px;
+    display: inline-block;
+  }
+
+  .card-header {
+    padding: 2px;
+  }
+
+  .card-content {
+    padding: 0;
+  }
+
+  .p-2 {
+    height: 15rem;
+    width: 30rem;
+    padding: 1.5rem 0.8rem;
+    object-fit: scale-down;
+  }
+
+  .text-center {
+    font-family: roboto;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.6rem;
+  }
+
+  .quantity {
+    float: left;
+    color: #444444;
+    font-weight: bolder;
+  }
+  .price {
+    float: right;
+    color: #fd4449;
+    font-weight: bolder;
+  }
+
+  .btn-cart {
+    text-align: center;
+  }
+  .button {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    padding: 1.5rem;
+    background: #3e8d2e;
+    color:#ffffff;
+    font-weight: bold;
+  }
+
+}

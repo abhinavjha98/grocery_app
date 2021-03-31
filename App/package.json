@@ -29,7 +29,7 @@
     "@ionic/storage": "^2.2.0",
     "@yellowspot/ng-truncate": "^1.4.0",
     "angular2-text-mask": "^9.0.0",
-    "cordova-android": "^5.2.2",
+    "cordova-android": "^6.0.0",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.1.19",

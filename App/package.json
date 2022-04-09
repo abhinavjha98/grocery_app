@@ -42,7 +42,7 @@
     "ionic-angular": "^3.9.2",
     "ionic2-calendar": "^0.5.8",
     "ionicons": "3.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "ng2-lazyload-image": "^2.4.0",
     "rxjs": "5.5.11",
     "sw-toolbox": "3.6.0",
